@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café é Sempre uma Boa Ideia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #efe0d1;
+      color: #2e1d12;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQfRu1Inrd5dhP0wC275Ji9eTtl_kc6V9h6A&s');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background-color: rgba(111, 78, 55, 0.9); /* marrom com transparência */
+  color: white;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .section img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      font-size: 1.5rem;
+      color: #6b2e1d;
+      border-bottom: 3px solid #6b2e1d;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    .text p {
+      text-align: justify;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .summary-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.summary-table th {
+  background-color: #8B4513; /* Marrom escuro */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+.summary-table .subhead td {
+  background-color: #f4a460; /* Laranja claro */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.summary-table td {
+  background-color: #f4a460; /* Laranja claro */
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.summary-table tfoot td {
+  background-color: #d2691e; /* Laranja escuro */
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 8px;
+}
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #d8cfc7;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .text {
+        text-align: center;
+      }
+
+      .text p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+  <div class="hero-text">
+    Café é Sempre uma boa Ideia
+  </div>
+</header>
+  <main class="container">
+    <div class="section">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJZWscibogHVjl7XsMsEFsWJaLMBbU0lZHw&s" alt="Café Expresso">
+      <div class="text">
+        <h2>Café Expresso</h2>
+        <p>
+          Um café expresso (do italiano caffè espresso), frequentemente referido simplesmente como espresso em vários idiomas, é um método de preparo café através da passagem de água quente (quase fervendo) sob alta pressão pelo café moído. É um preparo tradicional em máquinas industriais. É feito de maneira mais concentrada e é geralmente servido em doses pequenas. É a base para outras bebidas como latte e cappuccino. O sabor do expresso geralmente tem uma intensidade e acidez mais alta. É comum que seja servido em pequenas xícaras e com uma crema característica no topo.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="data:image/jpeg;base64,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" alt="Café Mocha">
+      <div class="text">
+        <h2>Café Mocha</h2>
+        <p>
+          O mocha (também conhecido como mochaccino) é uma variação do café latte com sabor achocolatado, e geralmente é servido em xícaras de cerâmica. Originado nos Estados Unidos, hoje é popular em diversas cafeterias do mundo todo. O mocha é preparado com espresso, leite vaporizado e calda ou pó de chocolate, podendo ser finalizado com chantilly. Seu nome deriva do porto de Moca, no Iémen, onde se exportava um dos mais finos grãos de café no século XV. É uma opção ideal para quem busca algo entre o chocolate quente e o café tradicional.
+        </p>
+      </div>
+    </div>
+
+        <section class="summary-table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Café</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="subhead">
+            <td>Expressos e Curtos</td>
+            <td>Modos de Preparo</td>
+            <td>Bebidas com Café</td>
+          </tr>
+          <tr>
+            <td>Café simples · Café com açúcar · Café duplo · Prensa francesa · Café turco</td>
+            <td>Aeropress · Chemex · Cold brew · Coado · Máquina de cápsula</td>
+            <td>Latte · Macchiato · Mocha · Affogato · Irish coffee</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="copyright">© CopyRight 2025</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>
