@@ -11,35 +11,39 @@
       color: #2e1d12;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    .hero {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQfRu1Inrd5dhP0wC275Ji9eTtl_kc6V9h6A&s');
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .cabecalho {
+    background-image: url('https://fdr.com.br/wp-content/uploads/2024/09/preco-do-cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start; 
+    padding-left: 2rem; 
+    }
 
-.hero-text {
-  background-color: rgba(111, 78, 55, 0.9); /* marrom com transparência */
-  color: white;
-  padding: 15px 30px;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 5px;
-  text-align: center;
-}
+    .cabecalho-text {
+     background-color: rgba(111, 78, 55, 0.6); 
+    color: white;
+    padding: 15px 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
+    }
 
 
     .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
+    max-width: 1000px;
+    margin-left: 2rem; 
+    padding: 2rem 0;
     }
+
 
     .section {
       display: flex;
@@ -58,6 +62,7 @@
 
     .text {
       flex: 1;
+    
     }
 
     .text h2 {
@@ -75,46 +80,46 @@
       margin-top: 10px;
     }
 
-    .summary-table table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-  font-size: 1rem;
-}
+    .tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+        font-size: 1rem;
+    }
 
-.summary-table th {
-  background-color: #8B4513; /* Marrom escuro */
-  color: white;
-  text-align: center;
-  padding: 12px;
-  font-size: 1.2rem;
-}
+   .tabela th {
+    background-color: #8B4513; /* Marrom escuro */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.2rem;
+    }
 
-.summary-table .subhead td {
-  background-color: #f4a460; /* Laranja claro */
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-}
+    .tabela .subtitulo td {
+    background-color: #f4a460; /* Laranja claro */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    }
 
-.summary-table td {
-  background-color: #f4a460; /* Laranja claro */
-  padding: 10px 15px;
-  text-align: center;
-}
+    .tabela td {
+    background-color: #f4a460; /* Laranja claro */
+    padding: 10px 15px;
+    text-align: center;
+    }
 
-.summary-table tfoot td {
-  background-color: #d2691e; /* Laranja escuro */
-  color: white;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 8px;
-}
+    .tabela tfoot td {
+    background-color: #d2691e; /* Laranja escuro */
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 8px;
+    }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #d8cfc7;
-      font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #d8cfc7;
+    font-size: 0.9rem;
     }
 
     @media (max-width: 700px) {
@@ -129,7 +134,7 @@
       }
 
       .text {
-        text-align: center;
+        text-align: left;
       }
 
       .text p {
@@ -139,8 +144,8 @@
   </style>
 </head>
 <body>
-  <header class="hero">
-  <div class="hero-text">
+  <header class="cabecalho">
+  <div class="cabecalho-text">
     Café é Sempre uma boa Ideia
   </div>
 </header>
@@ -165,7 +170,7 @@
       </div>
     </div>
 
-        <section class="summary-table">
+        <section class="tabela">
       <table>
         <thead>
           <tr>
@@ -173,7 +178,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="subhead">
+          <tr class="subtitulo">
             <td>Expressos e Curtos</td>
             <td>Modos de Preparo</td>
             <td>Bebidas com Café</td>
